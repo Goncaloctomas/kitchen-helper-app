@@ -1,68 +1,74 @@
-# kitchen-helper-app
-Aplicação em Python para pesquisa de receitas e geração de listas de compras via API Spoonacular
-🍳 Kitchen Helper
+# Kitchen Helper
 
-Uma aplicação desktop simples e intuitiva desenvolvida em Python que ajuda os utilizadores a encontrar receitas personalizadas com base no seu tipo de dieta e nos ingredientes disponíveis, gerando automaticamente uma lista de compras consolidada.
+A Python desktop application for personalized recipe discovery and automated shopping list generation using the Spoonacular API.
 
-📌 Funcionalidades
+## Overview
 
-🔍 Pesquisa Personalizada: Procura receitas com base na dieta (ex: vegan, keto, gluten free) e em ingredientes específicos.
+Kitchen Helper is a desktop application designed to simplify meal planning. Users can search for recipes based on their dietary preferences and available ingredients, explore cooking instructions, and generate a consolidated shopping list from the selected recipes.
 
-📖 Detalhes e Modo de Preparação: Apresenta a lista completa de ingredientes e as instruções de confeção de cada prato.
+The project combines a graphical user interface with external REST API integration to provide a practical and user-friendly cooking assistant.
 
-🛒 Gerador de Lista de Compras: Consolida automaticamente todos os ingredientes das receitas encontradas numa lista pronta a usar.
+## Features
 
-🎨 Interface Gráfica (GUI): Interface amigável e acessível desenvolvida com Tkinter.
+- **Personalized Recipe Search:** Find recipes based on dietary preferences, such as vegan, keto, or gluten-free, and available ingredients.
+- **Recipe Details:** View ingredient lists and cooking instructions.
+- **Shopping List Generation:** Consolidate ingredients from selected recipes into a single shopping list.
+- **Desktop Interface:** Interact with the application through a graphical interface built with Tkinter.
 
-🛠️ Tecnologias Utilizadas
+## Technologies
 
-Linguagem: Python 3
+- **Language:** Python 3
+- **GUI:** Tkinter
+- **HTTP Requests:** Requests
+- **External API:** Spoonacular API via RapidAPI
 
-Interface Gráfica: tkinter
+## Getting Started
 
-Comunicação HTTP: requests
+### Prerequisites
 
-API REST Externa: Spoonacular API via RapidAPI
+Before running the application, make sure you have:
 
-🚀 Como Executar o Projeto
+- Python 3 installed.
+- A RapidAPI account with access to the Spoonacular API.
+- The API key required to make requests.
 
-Pré-requisitos
+### Installation
 
-Certifica-te de que tens o Python instalado no teu sistema.
+1. Clone the repository:
 
-1. Clonar o repositório
+   ```bash
+   git clone https://github.com/Goncaloctomas/kitchen-helper-app.git
+   cd kitchen-helper-app
+   ```
 
-git clone https://github.com/TEU-UTILIZADOR/kitchen-helper-app.git
-cd kitchen-helper-app
+2. Install the required dependency:
 
+   ```bash
+   python -m pip install requests
+   ```
 
-2. Instalar as dependências
+3. Configure the API key.
 
-Instala a biblioteca necessária para realizar os pedidos HTTP:
+   Set up your RapidAPI key in the configuration used by the application. Keep your API key private and avoid committing credentials to the repository.
 
-pip install requests
+4. Run the application using the Python file that contains the main entry point. For example, if the entry point is `appcolinaria.py`:
 
+   ```bash
+   python appcolinaria.py
+   ```
 
-3. Configurar a Chave de API
+   If your main file has a different name, replace `appcolinaria.py` with the correct filename.
 
-Cria uma conta gratuita na RapidAPI.
+## Learning Objectives
 
-Subscreve o plano gratuito da Spoonacular API.
+This project provided practical experience with:
 
-Copia a tua X-RapidAPI-Key.
+- Python application development.
+- Building graphical user interfaces with Tkinter.
+- Consuming external REST APIs.
+- Making HTTP requests and handling API responses.
+- Organizing recipe information and generating shopping lists.
 
-Abre o ficheiro do projeto (app.py ou app_nova.py) e cola a tua chave na variável:
+## License
 
-API_KEY = "SUA_CHAVE_API_AQUI"
-
-
-4. Executar a aplicação
-
-python app.py
-
-
-(No Windows, também podes executar através de py app.py)
-
-📄 Licença
-
-Este projeto é de código aberto e está disponível para fins educacionais e de demonstração.
+This project was developed for educational and demonstration purposes.
